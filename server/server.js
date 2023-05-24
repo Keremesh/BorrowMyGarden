@@ -7,7 +7,7 @@ const port = process.env.PORT || 2000;
 const JWT = require("jsonwebtoken");
 
 const corsOptions = {
-    origin: "YOUR_FRONTEND_URL", // frontend URI (ReactJS)
+    origin: "borrow_my_garden_frontend", // frontend URI (ReactJS)
 }
 
 app.use(cors(corsOptions));

@@ -20,7 +20,7 @@ const App = () => {
   const [message, setMessage] = useState("");
 
   useEffect(() => {
-    fetch("https://YOUR_BACKEND_URL.com")
+    fetch("https://borrow_my_garden.com")
       .then((res) => res.json())
       .then((data) => setMessage(data.message));
   },[]);
