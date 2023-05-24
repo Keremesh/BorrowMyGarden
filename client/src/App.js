@@ -1,5 +1,6 @@
 import React from "react";
 import { BrowserRouter, Route, Routes, useNavigate } from "react-router-dom";
+import React, { useState, useEffect } from 'react';
 //import NavBar from "./Navbar";
 import SignUp from "./components/signup/SignUp";
 import Login from "./components/auth/Login";
