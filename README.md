@@ -124,7 +124,6 @@ insert video / screenshot demo here
 
 <div align="right">[ <a href="#table-of-contents">↑ to top ↑</a> ]</div>
 
-// not sure if all this is needed??? James, please confirm!!
 
 ## Learn More
 
