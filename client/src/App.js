@@ -15,10 +15,20 @@ import Messages from "./components/messages/Messages";
 
  
 const App = () => {
-    const navigate = useNavigate();
+  const navigate = useNavigate();
+  const [message, setMessage] = useState("");
+
+  useEffect(() => {
+    fetch("https://YOUR_BACKEND_URL.com")
+      .then((res) => res.json())
+      .then((data) => setMessage(data.message));
+  },[]);
 
  return (
    <div>
+     <div className="App">
+    <h1>{message}</h1>
+  </div>
     
     <NavBarFalse> 
       <NavBar />
