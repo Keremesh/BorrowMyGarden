@@ -6,11 +6,13 @@ require("dotenv").config();
 const port = process.env.PORT || 2000;
 const JWT = require("jsonwebtoken");
 
+const corsOptions = {
+    origin: "YOUR_FRONTEND_URL", // frontend URI (ReactJS)
+}
 
-
-
-app.use(cors());
+app.use(cors(corsOptions));
 app.use(express.json());
+
 
 const tokenChecker = (req, res, next) => {
   const authHeader = req.get("Authorization");
@@ -31,7 +33,6 @@ const tokenChecker = (req, res, next) => {
     next();
   });
 };
-
 
 
 const uri = process.env.ATLAS_URI;
